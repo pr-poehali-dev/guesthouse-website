@@ -25,9 +25,8 @@ const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-          Роскошный лесной ретрит с премиальными спа-услугами
-          <br />
-          для незабываемого отдыха в объятиях природы
+          Роскошный лесной барн-хаус и Спа комплекс с сауной и купелью для
+          незабываемого отдыха в объятиях природы
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
