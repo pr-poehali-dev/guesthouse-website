@@ -3,50 +3,55 @@ import Icon from "@/components/ui/icon";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+    >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1520637836862-4d197d17c2a0?w=1920&h=1080&fit=crop)",
+            "url(https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&h=1080&fit=crop)",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/40 to-black/60"></div>
       </div>
 
-      <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-          Добро пожаловать в<br />
-          <span className="text-primary">Уютный Дом</span>
+      <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
+        <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
+          <span className="text-emerald-400">Forest&Spa</span>
+          <br />
+          <span className="text-white">Luxe</span>
         </h1>
 
-        <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
-          Идеальное место для семейного отдыха и романтических выходных в
-          окружении природы
+        <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+          Роскошный лесной ретрит с премиальными спа-услугами
+          <br />
+          для незабываемого отдыха в объятиях природы
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button
             size="lg"
-            className="text-lg px-8 py-3 bg-primary hover:bg-primary/90"
+            className="text-lg px-8 py-4 bg-emerald-600 hover:bg-emerald-700 shadow-xl"
           >
-            <Icon name="Calendar" className="mr-2" />
-            Забронировать сейчас
+            <Icon name="Sparkles" className="mr-2" />
+            Забронировать спа-отдых
           </Button>
 
           <Button
             variant="outline"
             size="lg"
-            className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-gray-900"
+            className="text-lg px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-emerald-900 shadow-xl"
           >
-            <Icon name="Phone" className="mr-2" />
-            Связаться с нами
+            <Icon name="Leaf" className="mr-2" />
+            Узнать больше
           </Button>
         </div>
 
-        <div className="mt-12 flex justify-center">
+        <div className="mt-16 flex justify-center">
           <div className="animate-bounce">
-            <Icon name="ChevronDown" size={32} className="text-white/70" />
+            <Icon name="ChevronDown" size={36} className="text-emerald-400" />
           </div>
         </div>
       </div>
